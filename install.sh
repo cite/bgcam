@@ -52,7 +52,7 @@ device="$(
         sort -n | head -1 | cut -f2)" 2>/dev/null
 
 if [ -z "$device" ]; then
-    echo "Could auto-detect v4l2loopback device."
+    echo "Could not auto-detect v4l2loopback device."
     echo "Try to specify it manually with -d."
     exit 1
 fi
